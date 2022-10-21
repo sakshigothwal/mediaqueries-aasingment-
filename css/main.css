@@ -1,0 +1,117 @@
+@font-face {
+    font-family:"myfonts" ;
+    src: url("../fonts/RoxaleStoryItalic-GOwLa.otf") format("opentype");
+}
+@font-face {
+    font-family:"mycustomfonts" ;
+    src: url("../fonts/LoveRabbitPersonalUse-lgRaZ.ttf") format("truetype");
+}
+@font-face {
+    font-family:"mycustomfonts" ;
+    src: url("../fonts/LoveRabbitPersonalUse-lgRaZ.ttf") format("truetype");
+}
+
+
+header,footer{
+    width: 100%;
+    height: 300px;
+    background:yellow;
+    text-align: center;
+    font-size: 5em;
+    
+}
+main{
+    width: 100%;
+    background: wheat;
+}
+
+aside.left{
+    width: 25%;
+    height: 1000px;
+    background:royalblue;
+    font-size: 7em;
+    text-align: center;
+    color: blanchedalmond;
+    float: left;
+    font-family: "mycustomfonts";
+    line-height: 120px;
+}
+
+main > section{
+    width: 50%;
+    height: 1000px;
+    background:skyblue;
+    text-align: center;
+    font-size: 50px ;
+    color:maroon;
+    float: left ;
+    font-weight: bold;
+    
+}
+main > section > article{
+    width: 100%;
+    height: 197px; 
+    border : 2px dotted black;
+    font-family: "myfonts",sans-serif;  
+    
+}
+aside.right{
+    width: 100%;
+    height: 1000px;
+    background:wheat;
+    display: inline-block;
+    text-align: center;
+    font-size: 7em;
+    font-family: "mycustomfonts";
+    line-height: 120px;
+
+}
+
+footer{
+    clear: both;
+    background:purple;
+}
+
+/*
+@media not|only mediatype and (mediafeature and|or|not mediafeature) {
+  CSS-Code;
+}
+*/
+
+/* Small Device Mobile/SmartPhone */
+@media only screen and (max-width:767px){
+    aside.left{
+        width: 100%;
+        height:400px;
+    }
+    aside.right{
+        width: 100%;
+        height:200px;
+    }
+    main > section{
+        width: 100%;
+    }
+}
+
+/* Medium Device  Tablets */
+@media only screen and (min-width: 767px) and (max-width:991px){
+    aside.left{
+        width: 100%;
+        height:100px;
+    }
+    aside.right{
+        width: 100%;
+        height:300px;
+    }
+    main > section{
+        width: 100%;
+    }
+}
+
+/* Large Device  Desktop/Laptops */
+@media only screen and (min-width: 991px){
+    aside.right{
+        width: 24%;
+        height:1000px;
+    }
+}
